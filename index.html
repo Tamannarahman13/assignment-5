@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>player select</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-white">
+    <header>
+        <section class="my-20  ">
+            <h1 class="text-6xl italic font-bold text-orange-400 text-center mt-7  ">Select Your Best Five
+            </h1>
+            <p class=" text-center  text-white mx-20 my-4 ">Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Voluptate
+                omnis
+                nisi
+                fuga
+                similique. Error
+                eveniet repellat sapiente ipsa, vitae dolore, consequuntur ab in voluptates omnis nemo sunt aliquam
+                delectus aut quos natus, cumque vero hic ullam? Ab perspiciatis unde commodi incidunt iste minus
+                consectetur, est laboriosam animi illum alias minima!</p>
+        </section>
+    </header>
+
+    <main>
+        <section class="container mt-20 mx-20 mb-8">
+
+            <div class="grid grid-cols-2 gap-6">
+                <div class="grid grid-cols-3 gap-6">
+                    <div class="border-2 ">
+                        <img class=" img-size " src="images/messi.jpg" alt="">
+                        <h1 class="text-xl font-bold mx-3 mt-3">Lionel Messi</h1>
+                        <div class="player-info mx-3  mt-3">
+                            <p>36 Goals</p>
+                            <p>.</p>
+                            <p>120 Assist</p>
+                        </div>
+                        <div>
+                            <button class="border-0 px-10 py-1 bg-blue-600 font-samibold mx-8  mt-3 mb-5"
+                                onclick="addToSelect(this)">SELECT</button>
+                        </div>
+
+                    </div>
+                    <div class="border-2 ">
+                        <img class="  img-size" src="images/neymer.jpeg" alt="">
+                        <h1 class="text-xl font-bold mx-3 mt-3">Naymar Jr</h1>
+                        <div class="player-info mx-3  mt-3">
+                            <p>36 Goals</p>
+                            <p>.</p>
+                            <p>120 Assist</p>
+                        </div>
+                        <div>
+                            <button class="border-0 px-10 py-1 bg-blue-600 font-samibold mx-8  mt-3 mb-5"
+                                onclick="addToSelect(this)">SELECT</button>
+                        </div>
+
+                    </div>
+                    <div class="border-2 ">
+                        <img class="  img-size" src="images/kylian.jpg" alt="">
+                        <h1 class="text-xl font-bold mx-3 mt-3">Kylian Mbappe</h1>
+                        <div class="player-info mx-3  mt-3">
+                            <p>36 Goals</p>
+                            <p>.</p>
+                            <p>120 Assist</p>
+                        </div>
+                        <div>
+                            <button class="border-0 px-10 py-1 bg-blue-600 font-samibold mx-8  mt-3 mb-5"
+                                onclick="addToSelect(this)">SELECT</button>
+                        </div>
+
+                    </div>
+                    <div class="border-2 ">
+                        <img class=" img-size" src="images/vitor.jpg" alt="">
+                        <h1 class="text-xl font-bold mx-3 mt-3">Vitor Machado</h1>
+                        <div class="player-info mx-3  mt-3">
+                            <p>36 Goals</p>
+                            <p>.</p>
+                            <p>120 Assist</p>
+                        </div>
+                        <div>
+                            <button class="border-0 px-10 py-1 bg-blue-600 font-samibold mx-8  mt-3 mb-5"
+                                onclick="addToSelect(this)">SELECT</button>
+                        </div>
+
+                    </div>
+                    <div class="border-2 ">
+                        <img class=" img-size" src="images/sergio.jpg" alt="">
+                        <h1 class="text-xl font-bold mx-3 mt-3">Sergio Remos</h1>
+                        <div class="player-info mx-3  mt-3">
+                            <p>36 Goals</p>
+                            <p>.</p>
+                            <p>120 Assist</p>
+                        </div>
+                        <div>
+                            <button class="border-0 px-10 py-1 bg-blue-600 font-samibold mx-8  mt-3 mb-5"
+                                onclick="addToSelect(this)">SELECT</button>
+                        </div>
+
+                    </div>
+                    <div class="border-2 ">
+                        <img class=" img-size" src="images/renato.jpg" alt="">
+                        <h1 class="text-xl font-bold mx-3 mt-3">Renato Sanches</h1>
+                        <div class="player-info mx-3  mt-3">
+                            <p>36 Goals</p>
+                            <p>.</p>
+                            <p>120 Assist</p>
+                        </div>
+                        <div>
+                            <button class="border-0 px-10 py-1 bg-blue-600 font-samibold mx-8  mt-3 mb-5"
+                                onclick="addToSelect(this)">SELECT</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="grid grdi-cols-1 gap-6">
+                    <div class="border-0 bg-zinc-900 mr-16 ml-16 ">
+                        <h1 class=" text-2xl text-center mt-2">Select-V</h1>
+                        <ol>
+                            <li></li>
+                        </ol>
+                    </div>
+                    <div class="border-0 bg-zinc-900 mr-16 ml-16">
+                        <h1 class=" text-2xl text-center mt-3">Budget</h1>
+                        <div class="inline-flex p-5 ">
+                            <p class="">Per Player</p>
+                            <input class="bg-black border-2 ml-5" type="text">
+
+                        </div>
+                        <button class="block bg-blue-600 px-10 py-1 ml-28 mb-8">Calculate</button>
+                        <div class="inline-flex">
+                            <p class="  p-5">Player Expenses
+                            </p>
+                            <p class="mt-5 ml-5">$ <span>5000</span></p>
+                        </div>
+
+                        <div class="inline-flex p-5 ">
+                            <p class="">Manager</p>
+                            <input class="bg-black border-2 ml-5" type="text">
+
+                        </div>
+                        <div class="inline-flex p-5 ">
+                            <p class="">Coach</p>
+                            <input class="bg-black border-2 ml-5" type="text">
+
+                        </div>
+                        <button class="block bg-blue-600 px-10 py-1 ml-28 mb-8">Calculate Total</button>
+                        <div class="inline-flex">
+                            <p class="  p-5">Total
+                            </p>
+                            <p class="mt-5 ml-20">$ <span>0</span></p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            </div>
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

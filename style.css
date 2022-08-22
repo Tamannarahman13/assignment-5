@@ -1,0 +1,13 @@
+.player-info {
+    display: flex;
+    gap: 10px;
+    color: grey;
+
+}
+
+.img-size {
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
