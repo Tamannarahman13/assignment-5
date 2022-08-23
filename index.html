@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>player select</title>
+    <title>Best Footballer Select</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -13,17 +13,14 @@
 <body class="bg-black text-white">
     <header>
         <section class="my-20  ">
-            <h1 class="text-6xl italic font-bold text-orange-400 text-center mt-7  ">Select Your Best Five
+            <h1 class="text-6xl italic font-bold text-orange-400 text-center mt-7  ">Best Player Select
             </h1>
-            <p class=" text-center  text-white mx-20 my-4 ">Lorem ipsum dolor sit, amet consectetur adipisicing
-                elit. Voluptate
-                omnis
-                nisi
-                fuga
-                similique. Error
-                eveniet repellat sapiente ipsa, vitae dolore, consequuntur ab in voluptates omnis nemo sunt aliquam
-                delectus aut quos natus, cumque vero hic ullam? Ab perspiciatis unde commodi incidunt iste minus
-                consectetur, est laboriosam animi illum alias minima!</p>
+            <p class=" text-center  text-white mx-20 my-4 ">Football players are some of the most physically demanding
+                athletes in the world. They must be strong, fast, and agile to compete at a high level. Football players
+                also have to be mentally tough—they’re constantly under pressure from coaches and fans to perform well.
+                Football players play different positions depending on their size, speed, strength, and other physical
+                attributes. Some positions require more endurance than others, while some require more speed or power.
+            </p>
         </section>
     </header>
 
@@ -119,9 +116,9 @@
                 </div>
                 <div class="grid grdi-cols-1 gap-6">
                     <div class="border-0 bg-zinc-900 mr-16 ml-16 ">
-                        <h1 class=" text-2xl text-center mt-2">Select-V</h1>
+                        <h1 class=" text-2xl text-center mt-2">Selected <span id="selected-player">0</span></h1>
                         <ol id="player-name">
-                            <!-- <li></li> -->
+
                         </ol>
                     </div>
                     <div class="border-0 bg-zinc-900 mr-16 ml-16">
@@ -135,24 +132,25 @@
                         <div class="inline-flex">
                             <p class="  p-5">Player Expenses
                             </p>
-                            <p class="mt-5 ml-5">$ <span>5000</span></p>
+                            <p class="mt-5 ml-5">$ <span id="player-expenses">5000</span></p>
                         </div>
 
                         <div class="inline-flex p-5 ">
                             <p class="">Manager</p>
-                            <input class="bg-black border-2 ml-5" type="text">
+                            <input id="manager-amount" class="bg-black border-2 ml-5" type="text">
 
                         </div>
                         <div class="inline-flex p-5 ">
                             <p class="">Coach</p>
-                            <input class="bg-black border-2 ml-5" type="text">
+                            <input id="coach-amount" class="bg-black border-2 ml-5" type="text">
 
                         </div>
-                        <button class="block bg-blue-600 px-10 py-1 ml-28 mb-8">Calculate Total</button>
+                        <button id="calculate-total" class="block bg-blue-600 px-10 py-1 ml-28 mb-8">Calculate
+                            Total</button>
                         <div class="inline-flex">
                             <p class="  p-5">Total
                             </p>
-                            <p class="mt-5 ml-20">$ <span>0</span></p>
+                            <p class="mt-5 ml-20">$ <span id="total">0</span></p>
                         </div>
                     </div>
 
