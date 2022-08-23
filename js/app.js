@@ -23,6 +23,17 @@ function addToSelect(element) {
     }
     selectArray.push(playerObj)
     display(selectArray);
+    element.disabled = true;
 
 }
+
+
+document.getElementById('calculate-btn').addEventListener('click', function () {
+    const selectPlayer = document.getElementById('player-name');
+    const selectPlayerNumber = selectPlayer.innerText;
+
+    const selectPlayerString = parseInt(selectPlayerNumber)
+
+    console.log(selectPlayerString)
+})
 
