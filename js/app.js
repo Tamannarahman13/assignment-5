@@ -21,14 +21,19 @@ function addToSelect(element) {
     const playerObj = {
         playerName: playerName
     }
+    if (selectArray.length >= 5) {
+        alert('Already Five Player selected')
+        return;
+    }
+    else {
+        selectArray.push(playerObj)
+        document.getElementById('selected-player').innerText = selectArray.length
+        element.disabled = true;
+        display(selectArray);
 
 
+    }
 
-    selectArray.push(playerObj)
-    document.getElementById('selected-player').innerText = selectArray.length
-    display(selectArray);
-
-    element.disabled = true;
 
 }
 
