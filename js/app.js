@@ -21,6 +21,9 @@ function addToSelect(element) {
     const playerObj = {
         playerName: playerName
     }
+
+
+
     selectArray.push(playerObj)
     document.getElementById('selected-player').innerText = selectArray.length
     display(selectArray);
